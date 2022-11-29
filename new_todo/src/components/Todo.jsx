@@ -21,8 +21,10 @@ function Todo() {
             completed: false
         }
     ]);
-    const [selectedSort,setSelectedSort]=useState(" ")
-    const [searchQuery,setSearchQuery]=useState(" ")
+
+    console.log(tasks)
+    const [selectedSort,setSelectedSort]=useState("")
+    const [searchQuery,setSearchQuery]=useState("")
 
 
     useEffect(() => { setTasksRemaining(tasks.filter(task => !task.completed).length) }, [tasks]);
@@ -50,6 +52,8 @@ function Todo() {
         setTasks(newTasks);
     };
 
+    console.log(selectedSort)
+
     return (
         <div className="todo-container">
             <div className="header">Pending tasks ({tasksRemaining})</div>
@@ -71,12 +75,12 @@ function Todo() {
                 type='text'
                 value={searchQuery}
                 onChange={e=>setSearchQuery(e.target.value)}
-                placeholder='Поиск...'
+                placeholder="Поиск..."
             />
             <MySelect
                 value={selectedSort}
                 onChange={sortPosts}
-                defaultValue="Сортировка "
+                defaultValue="Сортировка"
                 options={[
                     {value:"title",name: "По названию"},
                     {value:"body",name: "По описанию"},
