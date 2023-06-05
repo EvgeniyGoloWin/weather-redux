@@ -1,6 +1,6 @@
 /* App.css */
 .wrapper {
-    font-family: Larsseit , sans-serif;
+    letter-spacing: .1rem;
 }
 
 /* Header Section */
@@ -52,18 +52,23 @@ blockquote {
     margin: 0 auto;
 }
 
+.title-block {
+    background-color: #f0facd; /* Set your desired background color here */
+    padding: 20px;
+}
+
 .title {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
     color: #333;
-    font-family: 'Oswald', sans-serif; /* Шрифт Oswald с весом 200 */
+    font-family: 'Oswald', sans-serif;
 }
 
 .subtitle {
     font-size: 24px;
     color: #555;
-    font-family: 'Roboto Mono', monospace; /* Шрифт Roboto Mono */
+    font-family: 'Roboto Mono', monospace;
 }
 
 .how-it-works-section {
@@ -117,17 +122,22 @@ blockquote {
     margin-bottom: 40px;
 }
 
+.test-item-wrapper {
+    background-color: #f0facd; /* Set your desired background color here */
+    padding: 20px;
+}
+
 .test-title {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 10px;
-    font-family: 'Oswald', sans-serif; /* Замените на имя шрифта */
+    font-family: 'Oswald', sans-serif;
 }
 
 .test-findings {
     font-size: 18px;
     color: #555;
-    font-family: 'Roboto Mono', monospace; /* Шрифт Roboto Mono */
+    font-family: 'Roboto Mono', monospace;
 }
 
 /* Benefit Section */
@@ -152,12 +162,16 @@ blockquote {
     text-align: center;
 }
 
+.about-description-wrapper {
+    background-color: #f0facd; /* Set your desired background color here */
+    padding: 20px;
+}
+
 .about-description {
     font-size: 18px;
-    color: #555;
     margin-bottom: 40px;
     color: #555;
-    font-family: 'Roboto Mono', monospace; /* Шрифт Roboto Mono */
+    font-family: 'Roboto Mono', monospace;
 }
 
 /* Contact Section */
@@ -225,7 +239,6 @@ footer {
     align-items: center;
     justify-content: center;
     border-top: 1px solid #ccc;
-    color: #555;
     font-family: 'Roboto Mono', monospace; /* Шрифт Roboto Mono */
 }
 

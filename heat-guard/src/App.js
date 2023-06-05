@@ -24,13 +24,15 @@ export function App() {
             <main>
                 <section className="hero-section">
                     <div className="hero-content">
-                        <h1 className="title">
-                            HeatGuard: Revolutionizing Energy Efficiency
-                        </h1>
-                        <p className="subtitle">
-                            Combat greenhouse gas emissions and alleviate our global energy crisis with HeatGuard - the
-                            unique energy transition solution.
-                        </p>
+                        <div className="title-block">
+                            <h1 className="title">
+                                HeatGuard: Revolutionizing Energy Efficiency
+                            </h1>
+                            <p className="subtitle">
+                                Combat greenhouse gas emissions and alleviate our global energy crisis with HeatGuard -
+                                the unique energy transition solution.
+                            </p>
+                        </div>
                     </div>
                 </section>
                 <section className="how-it-works-section">
@@ -47,36 +49,49 @@ export function App() {
                 </section>
                 <section className="proof-section">
                     <div className="content-wrapper">
-                        <h2 className="section-title">Our Proof from Multiple Tests</h2>
                         <ul className="test-list">
                             <li className="test-item">
-                                <h3 className="test-title">Test 1 - UNIVERSITY OF DETROIT MERCY, USA (2019-2021)</h3>
-                                <p className="test-findings">
-                                    "The Panel installation was completed on 19th January 2020. Due to Covid-19 the data
-                                    was only processed in 2021. Compared to the data of 2019 the new data collected
-                                    showed over 26% energy savings..."
-                                </p>
+                                <div className="test-item-wrapper">
+                                    <h3 className="test-title">Test 1 - UNIVERSITY OF DETROIT MERCY, USA
+                                        (2019-2021)</h3>
+                                    <p className="test-findings">
+                                        "The Panel installation was completed on 19th January 2020. Due to Covid-19 the
+                                        data
+                                        was only processed in 2021. Compared to the data of 2019 the new data collected
+                                        showed over 26% energy savings..."
+                                    </p>
+                                </div>
                             </li>
                             <li className="test-item">
-                                <h3 className="test-title">Test 2 - ORLY, FRANCE (2013)</h3>
-                                <p className="test-findings">
-                                    This independently verified study in Orly, Val-De-Marne, France produced an average
-                                    of 20 per cent fuel savings in the nine test apartments in a two-year-old building.
-                                    We installed an average of 8 Panels per apartment. The hot water was pumped directly
-                                    from the geothermal plant at Orly, France to individually metered radiators in each
-                                    apartment.
-                                </p>
+                                <div className="test-item-wrapper">
+                                    <h3 className="test-title">Test 2 - ORLY, FRANCE (2013)</h3>
+                                    <p className="test-findings">
+                                        This independently verified study in Orly, Val-De-Marne, France produced an
+                                        average
+                                        of 20 per cent fuel savings in the nine test apartments in a two-year-old
+                                        building.
+                                        We installed an average of 8 Panels per apartment. The hot water was pumped
+                                        directly
+                                        from the geothermal plant at Orly, France to individually metered radiators in
+                                        each
+                                        apartment.
+                                    </p>
+                                </div>
                             </li>
                             <li className="test-item">
-                                <h3 className="test-title">Test 3 - HARWELL SCIENCE AND INNOVATION CAMPUS UK (1987)</h3>
-                                <p className="test-findings">
-                                    "...the figure...(26.8%) represents the overall percentage fuel saving from the
-                                    panel in conditions modeled."
+                                <div className="test-item-wrapper">
+                                    <h3 className="test-title">Test 3 - HARWELL SCIENCE AND INNOVATION CAMPUS UK
+                                        (1987)</h3>
+                                    <p className="test-findings">
+                                        "...the figure...(26.8%) represents the overall percentage fuel saving from the
+                                        panel in conditions modeled."
 
-                                    "...a brief discussion of the transient effect of night-time setback in radiator
-                                    temperature suggests that transient heat losses would also be significantly reduced
-                                    by the use of the panel."
-                                </p>
+                                        "...a brief discussion of the transient effect of night-time setback in radiator
+                                        temperature suggests that transient heat losses would also be significantly
+                                        reduced
+                                        by the use of the panel."
+                                    </p>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -95,20 +110,27 @@ export function App() {
                 </section>
                 <section className="about-section">
                     <div className="content-wrapper">
-                        <h2 className="section-title">About Us</h2>
-                        <p className="about-description">
-                            Doug Tolmer guided the invention and early production of HeatGuard panel technology. Despite
-                            early success in the UK market in the late 80s, the focus on energy efficiency and the
-                            urgent need to reduce greenhouse gas emissions (GHG) was a low priority and the rollout
-                            stalled. Now in 2023, there is an urgent need for effective and rapidly deployable
-                            technologies to reduce energy costs and combat the global environmental crisis. HeatGuard is
-                            well placed to facilitate energy distributors, energy service companies (ESCOs), property
-                            managers, and government agencies to participate in the emerging carbon markets, which are a
-                            key policy instrument to drive systemic transformation. Chlöe Tolmer is in charge of
-                            Operations, and Arpad Maksay is in charge of Distribution, Marketing & Sales.
-                        </p>
+                        <div className="about-description-wrapper">
+                            <h2 className="section-title">About Us</h2>
+                            <p className="about-description">
+                                Doug Tolmer guided the invention and early production of HeatGuard panel technology.
+                                Despite
+                                early success in the UK market in the late 80s, the focus on energy efficiency and the
+                                urgent need to reduce greenhouse gas emissions (GHG) was a low priority and the rollout
+                                stalled. Now in 2023, there is an urgent need for effective and rapidly deployable
+                                technologies to reduce energy costs and combat the global environmental crisis.
+                                HeatGuard is
+                                well placed to facilitate energy distributors, energy service companies (ESCOs),
+                                property
+                                managers, and government agencies to participate in the emerging carbon markets, which
+                                are a
+                                key policy instrument to drive systemic transformation. Chlöe Tolmer is in charge of
+                                Operations, and Arpad Maksay is in charge of Distribution, Marketing & Sales.
+                            </p>
+                        </div>
                     </div>
                 </section>
+
             </main>
             <footer>
                 <div className="contact-section">
