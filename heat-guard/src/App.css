@@ -27,10 +27,30 @@ header {
 .header-quote {
     margin: 20px 0;
     font-size: 21px;
-    font-style: italic;
     text-align: center;
     color: #333;
     font-family: 'Roboto Mono', sans-serif;
+    margin-bottom: 1rem; /* Add this line */
+}
+
+.header-buttons {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.contact-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-button:hover {
+    transform: translateY(-2px);
 }
 
 blockquote {
@@ -72,9 +92,9 @@ blockquote {
 }
 
 .how-it-works-section {
-    background-color: #ffffff;
     padding: 60px 0;
     text-align: center;
+    background-color: #f0facd;
 }
 
 .content-wrapper {
@@ -142,7 +162,7 @@ blockquote {
 
 /* Benefit Section */
 .benefit-section {
-    background-color: #ffffff;
+    background-color: #f0facd;
     padding: 60px 0;
     text-align: center;
 }

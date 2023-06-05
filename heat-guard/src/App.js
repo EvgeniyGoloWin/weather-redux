@@ -1,25 +1,38 @@
+import {useRef} from "react";
 import logo from '../src/assets/icon/HeatGuard-removebg-preview.png';
 import thermo from '../src/assets/icon/thermo.png';
 import battery from '../src/assets/icon/battery.png';
 import mail from '../src/assets/logo/mail.png';
 import phone from '../src/assets/logo/phone.png';
 import footerLogo from '../src/assets/icon/logo-footer-removebg-preview.png'
+import {Link} from 'react-scroll';
 import './App.css';
 
 export function App() {
+    let contactSectionRef = useRef(null);
     return (
         <div className="wrapper">
             <header>
                 <div className="wrapper-logo">
                     <img className="logo" src={logo} alt="Logo"/>
                 </div>
-                <blockquote className="header-quote">
-                    <p>
-                        “It has long been known that the cheapest and cleanest unit of energy is the one you don’t need
-                        to use.”
-                    </p>
-                    <cite>David Brooks, the Concord Monitor.</cite>
-                </blockquote>
+                <div className="right-content">
+                <div className="header-quote">
+                    <blockquote>
+                        <p>
+                            “It has long been known that the cheapest and cleanest unit of energy is the one you don’t
+                            need
+                            to use.”
+                        </p>
+                        <cite>David Brooks, the Concord Monitor.</cite>
+                    </blockquote>
+                </div>
+                <div className="header-buttons">
+                    <Link to="contact-section" smooth={true} duration={600}>
+                        <button className="contact-button">Contact Us</button>
+                    </Link>
+                </div>
+                </div>
             </header>
             <main>
                 <section className="hero-section">
@@ -130,10 +143,9 @@ export function App() {
                         </div>
                     </div>
                 </section>
-
             </main>
             <footer>
-                <div className="contact-section">
+                <div className="contact-section" ref={(ref) => (contactSectionRef = ref)}>
                     <h2 className="contact-title">Contact Us</h2>
                     <div className="contact-info">
                         <div className="contact-item">
